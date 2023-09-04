@@ -2,7 +2,7 @@
 #define max 20
 
 using namespace std;
-//
+
 char prod[max][10];
 char ter[10], nt[10];
 char first[10][10], follow[10][10];
