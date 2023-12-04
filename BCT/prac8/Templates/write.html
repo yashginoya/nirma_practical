@@ -1,0 +1,38 @@
+{% extends "base.html" %} 
+{% block title %}Home{% endblock %} 
+{% block content%}
+  <div class="options">
+    <div class="option_btn">
+      <a href="/read">Read from Contract</a>
+    </div>
+    <div class="option_btn">
+      <a href="/write">Write in  Contract</a>
+    </div>
+  </div>
+  <div class="writeBlock">
+    <form action="/write" method="post">
+      <div class="form-group">
+        <label for="new_val">New Value : </label>
+        <input type="number" name="new_val" />
+      </div>
+        <button class="btn btn-warning" type="submit">Submit</button>
+    </form>
+  </div>
+  {% if updated %}
+    <div class="update_result">Value is updated to {{value}}</div>
+    <div class="update_table">
+        
+        <table class="transactionTable">
+            <thead>
+                <th>Transaction data :</th>
+            </thead>
+            {% for k,v in receipt.items() %}
+                <tr>
+                    <td class="field">{{k}}</td>
+                    <td class="value">{{v}}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+  {% endif %}
+{% endblock %}

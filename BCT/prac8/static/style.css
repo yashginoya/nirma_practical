@@ -1,0 +1,108 @@
+body {
+    background-image: linear-gradient(to right, #E8DBFC, #F8F9D2);
+}
+
+.options {
+    margin: auto;
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.option_btn {
+    background: linear-gradient(180.3deg, rgb(221, 221, 221) 5.5%, rgb(110, 136, 161) 90.2%);
+    border-radius: 20px;
+    font-weight: bolder;
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    transition: .2s ease;
+}
+
+.option_btn:hover {
+    transform: scale(1.05);
+    background: radial-gradient(592px at 48.2% 50%, rgba(255, 255, 249, 0.6) 0%, rgb(160, 199, 254) 74.6%);
+    color: #0a485c !important;
+    cursor: pointer;
+    border: solid 1px black;
+}
+
+.readBlock {
+    font-size: 2rem;
+    color: #0a485c;
+    width: 50%;
+    margin: 10% auto;
+    text-align: center;
+}
+
+.readBlock span {
+    color: #145DA0;
+    font-weight: bolder;
+
+}
+
+.writeBlock {
+    margin: 1% auto;
+    width: 50%;
+    text-align: center;
+}
+
+.update_result {
+    font-size: 1.5rem;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    font-weight: bolder;
+    color: green;
+}
+
+.update_table {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.option_btn a {
+    color: #0a485c;
+    text-decoration: none;
+}
+
+.transactionTable td {
+    border: 2px solid;
+    border-radius: 5px;
+    padding: 0.1rem 1rem
+}
+
+.transactionTable .field {
+    font-weight: 700;
+    background: linear-gradient(to right, #89216B, #DA4453);
+    color: white;
+}
+
+.transactionTable .value {
+    font-weight: 500;
+    background: linear-gradient(to right, #E9E4F0, #D3CCE3);
+    max-width: 40rem;
+    overflow: hidden;
+    color: black;
+}
+
+.footer {
+    background-image: linear-gradient(0deg, #323E42 0%, rgba(19, 84, 122, 0) 100%);
+    padding: 3%;
+
+    font-family: "Corbel";
+}
+
+.footer_names {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+.footer_names h3 {
+    color: aliceblue;
+    font-weight: bolder !important;
+}
