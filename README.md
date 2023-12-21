@@ -7,9 +7,12 @@ gcc lex.yy.c -ll (enter)
 
 
 
-### command for practical 5   
+### command for practical 5 aaaa  
 practical 5 file  : calc.l , calc.y  
 >> lex calc.l   
 >> yacc -d calc.y    
 >> gcc lex.yy.c y.tab.c -w  
 >> ./a.out   
+
+hello world
+
